@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+/*****************************************header + nav *********************/
+
+#banner-index{
+    width: 100%;   
+    margin-top: 5px;
+}
+
+#banner-index img{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.img-banner{
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a{
+    box-shadow: none;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 1.2em;
+    
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 300px;
+    
+    
+    
+    
+    
+}
+
+/******************************************************Main*************************************/
+
+#all-main{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 50px; 
+} 
+#all-main p,
+#all-main h1{
+    color: white;
+    margin-top: 20px; 
+}
+#all-main h1{
+    font-size: 3em;
+}
+
+.left-main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+}
+.left-main p{
+    width: 500px;
+    
+   
+}
+
+
+
+.lien-a-propos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    margin-top: 50px;
+    transition: transform 0.5s;
+}
+
+
+.lien-a-propos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.right-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.right-main figure img{
+    width: 500px;
+
+}
+.right-main figure {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    
+    color: white;
+    padding: 8px;  
+}
+
+.wallpaper{
+    height: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(imgs/wallpaper-soundtracks.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wallpaper a{
+    font-size: 1.5em;
+    border: solid;
+    border-radius: 20px;
+    
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.wallpaper p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.9em;
+    
+}
+
+.lien-soundtracks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;  
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+
+
+/************************ footer ***************************************/
+
+footer{
+    background-color: rgba(255, 255, 255, 0.829);
+}
+
+#all-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#all-footer h2{
+    font-size: 3em;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.footer-logo img{
+    width: 80px;
+    margin-bottom: 30px;
+    
+}
+.logos-footer{
+    word-spacing: 30px;
+}
+
+.logos-footer a  {
+    font-size: 35px;
+    color: black;
+    gap: 500px;
+    
+}
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.logos-footer a:hover,
+.lien-soundtracks:hover,
+nav a:hover,
+.lien-a-propos:hover  {
+    opacity: 0.5;
+    
+}
+
+.lien-a-propos:hover,
+.lien-soundtracks:hover{
+    transform: scale(1.1);
+}
+
+/*******************************Soundtracks**********************/
+.wallpaper-soundtracks{
+    height: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(imgs/Soundtracks.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.wallpaper-soundtracks h2,
+.wallpaper-a-propos h2{
+    font-size: 3em;
+    color: white;
+
+
+}
+.section-albums{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.grid-albums{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 20px;
+
+}
+
+
+.grid-albums img{
+  flex-wrap: wrap;              
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.grid-albums img:hover{
+    transform:translatey(-10px) ;
+
+}
+
+/************************ a propos *********************/
+
+.photo-sam,
+.photo-dan,
+.photo-tom,
+.photo-adam,
+.photo-alex{
+    width: 300px;
+    height: 300px;
+    overflow: hidden; 
+    border-radius: 50%;
+    position: relative;
+    
+    
+}
+
+.photo-sam img,
+.photo-dan img,
+.photo-tom img,
+.photo-adam img,
+.photo-alex img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s;
+    filter: grayscale(1);
+}
+
+.photo-sam:hover img,
+.photo-dan:hover img,
+.photo-tom:hover img,
+.photo-adam:hover img,
+.photo-alex:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0);
+    
+}
+
+.sam-text,
+.dan-text,
+.tom-text,
+.adam-text,
+.alex-text{
+    color: white;
+    width: 50%;
+    padding-left: 20px;
+}
+.sam-text h2,
+.dan-text h2,
+.tom-text h2,
+.adam-text h2,
+.alex-text h2{
+   font-size: 2em;
+   margin-bottom: 10px;
+}
+/***************cartes**********/
+
+.right-carte{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.carte-1,
+.carte-3,
+.carte-2,
+.carte-4,
+.carte-5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width:  960px;
+    /* border: solid white; */
+    gap: 50px;
+
+}
+
+.wallpaper-a-propos{
+    height: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(imgs/images_a-propos/bands.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.carte-1,
+.carte-3,
+.carte-5{
+    border-right: solid white;
+    
+}
+
+
+
+.reseaux-circle{
+    position: absolute;
+    top: 58px;
+    right: -40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    gap: 10px;
+    transition: 1s;
+    
+}
+
+.photo-tom:hover .reseaux-circle,
+.photo-sam:hover .reseaux-circle,
+.photo-adam:hover .reseaux-circle,
+.photo-alex:hover .reseaux-circle,
+.photo-dan:hover .reseaux-circle{
+    right: 20px;
+}
+
+.reseaux-circle a {
+    color: white;
+}
+.reseaux-circle a:hover {
+    
+    
+    color: black;
+}
+
+/******************** POPUP-OVERLAY ********************/
+
+#popup-overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+
+#popup-overlay.open{
+    display: block !important;
+}
+
+.popup-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    
+}
+.popup-sounds{
+    display: flex;
+    flex-direction: row;
+}
+
+.popup-exit{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
