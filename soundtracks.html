@@ -18,67 +18,449 @@
                 <a href="index.html"><li>Acceuil</li></a> 
                 <a href="a-propos.html"><li>A-propos</li></a>
                 <a href="soundtracks.html"><li>Discographie</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="contact.html"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="popup-overlay" class="open">
-            <div class="popup-content">
-                <h2>the classic symptoms of a broken spirit</h2>
-                <div class="popup-sounds">
-                    <div>
-                        <p>Titre</p>
-                        <p>1 deep fake</p>
-                        <p>2 tear gas</p>
-                        <p>3 spit the bone</p>
-                        <p>4 burn down my house</p>
-                        <p>5 living is killing us</p>
-                        <p>6 when we were young</p>
-                        <p>7 doomscrolling</p>
-                        <p>8 born again pessimist</p>
-                        <p>9 a new moral low ground</p>
-                        <p>10 all the love in the woorld</p>
-                        <p>11 be very afraid</p>
-                    </div>
-                    <div>
-                        <p>Durée</p>
-                        <p>3:33</p>
-                        <p>4:17</p>
-                        <p>3:32</p>
-                        <p>4:19</p>
-                        <p>3:41</p>
-                        <p>3:13</p>
-                        <p>4:21</p>
-                        <p>3:31</p>
-                        <p>3:31</p>
-                        <p>4:01</p>
-                        <p>4:20</p>
-                    </div>
-                </div>
-                <a class="popup-exit" href="javascript:void(0)">Close</a>
-            </div>
-        </div>
         <section class="wallpaper-soundtracks">
-            <h2>For Those That Wish To Exist </h2>
+            <h2>The Classic symptoms Of a Broken Qpirit </h2>
             
         </section>
         <section class="section-albums">
             <h2>SOUNDTRACKS</h2>
             <div class="grid-albums">
-                <a oneclick="togglePopup()" href="javascript:void(0)"><img src="imgs/albums/album6.jpg" alt="the classic symptoms of a broken spirit"></a>
-                <a href="#"><img src="imgs/albums/album3.jpg" alt="For Those That Wish To Exist"></a>
-                <a href="#"><img src="imgs/albums/album7.jpg" alt="Holly Hell"></a>
-                <a href="#"><img  src="imgs/albums/album1.jpg" alt="All Our Gods Have Abandoned Us"></a>
-                <a href="#"><img src="imgs/albums/album4.jpg" alt="For Those That Wish To Exist At Abbey Road"></a>
+                <a onclick="togglePopup()" href="javascript:void(0)"><img src="imgs/albums/album6.jpg" alt="the classic symptoms of a broken spirit"></a>
+                <a onclick="togglePopup2()" href="javascript:void(0)"><img src="imgs/albums/album3.jpg" alt="For Those That Wish To Exist"></a>
+                <a onclick="togglePopup3()" href="avascript:void(0)"><img src="imgs/albums/album7.jpg" alt="Holly Hell"></a>
+                <a onclick="togglePopup4()" href="#"><img  src="imgs/albums/album1.jpg" alt="All Our Gods Have Abandoned Us"></a>
+                <a onclick="togglePopup5()" href="#"><img src="imgs/albums/album4.jpg" alt="For Those That Wish To Exist At Abbey Road"></a>
                 
-                <a href=""> <img src="imgs/albums/album8.jpg" alt="Lost Forever"></a>
-                <a href=""> <img src="imgs/albums/album9.jpg" alt="The Here and Now"></a>
-                <a href=""> <img src="imgs/albums/album10.jpg" alt="Daybraker (Delux Edition)"></a>
-                <a href=""> <img src="imgs/albums/album11.jpg" alt="Hollow Crown"></a>
+                <a onclick="togglePopup6()" href="#"> <img src="imgs/albums/album8.jpg" alt="Lost Forever"></a>
+                <a onclick="togglePopup7()" href="#"> <img src="imgs/albums/album9.jpg" alt="The Here and Now"></a>
+                <a onclick="togglePopup8()" href="#"> <img src="imgs/albums/album10.jpg" alt="Daybraker (Delux Edition)"></a>
+                <a onclick="togglePopup9()" href="#"> <img src="imgs/albums/album11.jpg" alt="Hollow Crown"></a>
             </div>
         </section>
     </main>
+    <!----------------------------- ALL POPUP------------------------------>
+
+    <!------------------------------POPUP-1--------------------------------->
+    <div id="popup-overlay">
+        <div class="popup-content">
+            <div class="top-popup">
+                 <h2>The classic symptoms of a broken spirit</h2>
+                 <p>Album-2022-11 titres</p>
+            </div>
+           
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. deep fake</p>
+                    <p>2. tear gas</p>
+                    <p>3. spit the bone</p>
+                    <p>4. burn down my house</p>
+                    <p>5. living is killing us</p>
+                    <p>6. when we were young</p>
+                    <p>7. doomscrolling</p>
+                    <p>8. born again pessimist</p>
+                    <p>9. a new moral low ground</p>
+                    <p>10. all the love in the woorld</p>
+                    <p>11. be very afraid</p>
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>3:33</p>
+                    <p>4:17</p>
+                    <p>3:32</p>
+                    <p>4:19</p>
+                    <p>3:41</p>
+                    <p>3:13</p>
+                    <p>4:21</p>
+                    <p>3:31</p>
+                    <p>3:31</p>
+                    <p>4:01</p>
+                    <p>4:20</p>
+                </div>
+                <img src="imgs/albums/album6.jpg" alt="the classic symptoms of a broken spirit">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup()">Close</a>
+        </div>
+    </div>
+<!----------------------------------------POPUP-2----------------------------->
+    <div id="popup-overlay2">
+        <div class="popup-content">
+            <div class="top-popup">
+                <h2>For Those That Wish To Exist</h2>
+                <p>Album-2021-15 titres</p>
+            </div>
+            
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Do You Dream Of Armageddon?</p>
+                    <p>2. Black Lungs</p>
+                    <p>3. Giving Blood/p>
+                    <p>4. Discourses Is Dead</p>
+                    <p>5. Dead Butterflies</p>
+                    <p>6. An Ordinary Extinction</p>
+                    <p>7. Impermanence</p>
+                    <p>8. Flight Without Feathers</p>
+                    <p>9. Little Wonder</p>
+                    <p>10. Animals</p>
+                    <p>11. Libertine</p>
+                    <p>12. Goliath</p>
+                    <p>13. Demi God</p>
+                    <p>14. Meteor</p>
+                    <p>15. Dying Is Absolutely Safe</p>
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>1:38</p>
+                    <p>3:51</p>
+                    <p>3:32</p>
+                    <p>3:46</p>
+                    <p>4:02</p>
+                    <p>4:07</p>
+                    <p>4:02</p>
+                    <p>3:48</p>
+                    <p>3:47</p>
+                    <p>4:04</p>
+                    <p>4:01</p>
+                    <p>4:17</p>
+                    <p>4:26</p>
+                    <p>4:01</p>
+                    <p>4:59</p>
+                </div>
+                <img src="imgs/albums/album3.jpg" alt="the classic symptoms of a broken spirit">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup2()">Close</a>
+        </div>
+    </div> 
+    <!---------------------------------POPUP-3---------------------------------------->
+
+    <div id="popup-overlay3">
+        <div class="popup-content">
+            <div class="top-popup">
+                <h2>Holly Hell</h2>
+                <p>Album-2018-11 titres</p>
+            </div>
+            
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Death Is Not Defeat</p>
+                    <p>2. Hereafter</p>
+                    <p>3. Mortal After All</p>
+                    <p>4. Holly Hell</p>
+                    <p>5. Damnation</p>
+                    <p>6. Royal Beggars</p>
+                    <p>7. Modern Misery</p>
+                    <p>8. Dying To Heal</p>
+                    <p>9. The Seventh Circle</p>
+                    <p>10. Doomsday</p>
+                    <p>11. A Wasted Hymn</p>
+                    
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>3:45</p>
+                    <p>4:15</p>
+                    <p>3:39</p>
+                    <p>4:13</p>
+                    <p>4:08</p>
+                    <p>4:01</p>
+                    <p>4:13</p>
+                    <p>3:50</p>
+                    <p>3:48</p>
+                    <p>4:08</p>
+                    <p>4:34</p>
+                    
+                </div>
+                <img src="imgs/albums/album7.jpg" alt="the classic symptoms of a broken spirit">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup3()">Close</a>
+        </div>
+    </div> 
+    <!---------------------------------POPUP-4------------------------------------>
+
+    <div id="popup-overlay4">
+        <div class="popup-content">
+            <div class="top-popup">
+                <h2>All Our Gods Have Abandoned Us</h2>
+                <p>Album-2016-11 titres</p>
+            </div>
+            
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Nihilist</p>
+                    <p>2. Deathwish</p>
+                    <p>3. Phantom Fear</p>
+                    <p>4. Downfall</p>
+                    <p>5. Gone With The Wind</p>
+                    <p>6. The Empty Hourglass</p>
+                    <p>7. A March Made In Heaven</p>
+                    <p>8. Gravity</p>
+                    <p>9. All Love Is Lost</p>
+                    <p>10. From TThe Wilderness</p>
+                    <p>11. Memento Mori</p>
+                    
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>2:51</p>
+                    <p>3:52</p>
+                    <p>4:06</p>
+                    <p>4:04</p>
+                    <p>3:45</p>
+                    <p>4:11</p>
+                    <p>3:48</p>
+                    <p>3:18</p>
+                    <p>4:20</p>
+                    <p>3:44</p>
+                    <p>8:12</p>
+                    
+                </div>
+                <img  src="imgs/albums/album1.jpg" alt="All Our Gods Have Abandoned Us">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup4()">Close</a>
+        </div>
+    </div> 
+    <!--------------------------------POPUP-5--------------------------------------------->
+
+    <div id="popup-overlay5">
+        <div class="popup-content">
+            <div class="top-popup">
+                <h2>For Those That Wish To Exist At Abbey Road</h2>
+                <p>Album-2022-15 titres</p>
+            </div>
+            
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Do You Dream Of Armageddon - Abbey Road Version</p>
+                    <p>2. Black Lungs - Abbey Road Version</p>
+                    <p>3. Giving Blood - Abbey Road Version</p>
+                    <p>4. Discourses Is Dead - Abbey Road Version</p>
+                    <p>5 Dead Butterflies - Abbey Road Version</p>
+                    <p>6. An Ordinary Extinction - Abbey Road Version</p>
+                    <p>7. Impermanence - Abbey Road Version</p>
+                    <p>8. Flight Without Feathers - Abbey Road Version</p>
+                    <p>9. Little Wonder - Abbey Road Version</p>
+                    <p>10. Animals - Abbey Road Version</p>
+                    <p>11. Libertine - Abbey Road Version</p>
+                    <p>12. Goliath - Abbey Road Version</p>
+                    <p>13. Demi God - Abbey Road Version</p>
+                    <p>14. Meteor - Abbey Road Version</p>
+                    <p>15. Dying Is Absolutely Safe - Abbey Road Version</p>
+                    
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>1:38</p>
+                    <p>3:51</p>
+                    <p>3:32</p>
+                    <p>3:46</p>
+                    <p>4:02</p>
+                    <p>4:07</p>
+                    <p>4:02</p>
+                    <p>3:48</p>
+                    <p>3:47</p>
+                    <p>4:04</p>
+                    <p>4:01</p>
+                    <p>4:17</p>
+                    <p>4:26</p>
+                    <p>4:01</p>
+                    <p>4:59</p>
+                </div>
+                <img src="imgs/albums/album4.jpg" alt="For Those That Wish To Exist At Abbey Road">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup5()">Close</a>
+        </div>
+    </div> 
+
+    <!---------------------------------------POPUP-6---------------------------------->
+    <div id="popup-overlay6">
+        <div class="popup-content">
+            <div class="top-popup">
+                 <h2>lost Forever//Lost Together</h2>
+                 <p>Album-2014-11 titres</p>
+            </div>
+           
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Gravedigger</p>
+                    <p>2. Naysayer</p>
+                    <p>3. Broken Cross</p>
+                    <p>4. The Devil Is Near</p>
+                    <p>5. Dead Man Talking</p>
+                    <p>6. Read Hypergiant</p>
+                    <p>7. C.A.N.C.E.R</p>
+                    <p>8. Colony Collapse</p>
+                    <p>9. Castels In The Air</p>
+                    <p>10. Youth Is Wasted On The Young</p>
+                    <p>11. The Distant Blue</p>
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>4:05</p>
+                    <p>3:25</p>
+                    <p>3:52</p>
+                    <p>3:35</p>
+                    <p>4:04</p>
+                    <p>2:13</p>
+                    <p>4:19</p>
+                    <p>4:31</p>
+                    <p>3:42</p>
+                    <p>4:23</p>
+                    <p>5:13</p>
+                </div>
+                <img src="imgs/albums/album8.jpg" alt="Lost Forever">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup6()">Close</a>
+        </div>
+    </div>
+
+    <!--------------------------------------POPUP-7----------------------------->
+
+    <div id="popup-overlay7">
+        <div class="popup-content">
+            <div class="top-popup">
+                <h2>The Here and Now</h2>
+                <p>Album-2012-10 titres</p>
+            </div>
+            
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Day in Day Out</p>
+                    <p>2. Learn to Live</p>
+                    <p>3. Delete, Rewind</p>
+                    <p>4. BTN</p>
+                    <p>5. An Open Letter to Myself</p>
+                    <p>6. The Blues</p>
+                    <p>7. Red Eyes</p>
+                    <p>8. Stay Young Forever</p>
+                    <p>9. Heartburn</p>
+                    <p>10. Year ine Year Out/Up and Away</p>
+                
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>3:10</p>
+                    <p>4:01</p>
+                    <p>3:08</p>
+                    <p>3:57</p>
+                    <p>3:16</p>
+                    <p>3:16</p>
+                    <p>4:17</p>
+                    <p>3:02</p>
+                    <p>3:37</p>
+                    <p>7:27</p>
+                </div>
+                <img src="imgs/albums/album9.jpg" alt="The Here and Now">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup7()">Close</a>
+        </div>
+    </div> 
+    <!--------------------------------------POPUP-8--------------------------->
+
+    <div id="popup-overlay8">
+        <div class="popup-content">
+            <div class="top-popup">
+                <h2>Daybreaker (Deluxe Edition)</h2>
+                <p>Album-2013-15 titres</p>
+            </div>
+            
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. The Bitter End</p>
+                    <p>2. Alpha Omega</p>
+                    <p>3. These Colours Don't Run</p>
+                    <p>4. Daybreak</p>
+                    <p>5. Truth, Be Told</p>
+                    <p>6. Even if You Win, You're Still A Rat</p>
+                    <p>7. Outsider Heart</p>
+                    <p>8. Behind the Throne</p>
+                    <p>9. Devil's the Throne</p>
+                    <p>10. Feather Of Lead</p>
+                    <p>11. Unbeliever</p>
+                    <p>12. Black Bank</p>
+                    <p>13. Cracks Ine the Earth</p>
+                    <p>14. Blood Bank</p>
+                    <p>15. Of Dust and Nations</p>
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>2:25</p>
+                    <p>3:55</p>
+                    <p>4:01</p>
+                    <p>3:32</p>
+                    <p>4:31</p>
+                    <p>3:12</p>
+                    <p>3:27</p>
+                    <p>4:08</p>
+                    <p>4:06</p>
+                    <p>2:50</p>
+                    <p>4:43</p>
+                    <p>4:33</p>
+                    <p>3:21</p>
+                    <p>5:14</p>
+                    <p>3:42</p>
+                </div>
+                <img src="imgs/albums/album10.jpg" alt="Daybraker (Delux Edition)">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup8()">Close</a>
+        </div>
+    </div> 
+    <!---------------------------------------POPUP-9-------------------------------->
+
+    <div id="popup-overlay9">
+        <div class="popup-content">
+            <div class="top-popup">
+                 <h2>Hollow CROWN</h2>
+                 <p>Album-2009-12 titres</p>
+            </div>
+           
+            <div class="popup-sounds">
+                <div class="sounds-titles">
+                    <p>#Titre</p>
+                    <p>1. Early Grave</p>
+                    <p>2. Dethroned</p>
+                    <p>3. Numbers Count for Nothing</p>
+                    <p>4. Follow the Water</p>
+                    <p>5. In Elegance</p>
+                    <p>6. We're All Alone</p>
+                    <p>7. Borrowed Time</p>
+                    <p>8. Every Last Breath</p>
+                    <p>9. One of These Days</p>
+                    <p>10. Dead March</p>
+                    <p>11. Left With a Last Minute</p>
+                    <P>12. Hollow Crown </P>
+                </div>
+                <div class="sounds-times">
+                    <p>Durée</p>
+                    <p>3:32</p>
+                    <p>3:06</p>
+                    <p>3:50</p>
+                    <p>3:40</p>
+                    <p>4:16</p>
+                    <p>3:01</p>
+                    <p>2:30</p>
+                    <p>3:28</p>
+                    <p>2:34</p>
+                    <p>3:47</p>
+                    <P>2:57</P>
+                    <p>4:24</p>
+                </div>
+                <img src="imgs/albums/album11.jpg" alt="Hollow Crown">
+            </div>
+            <a class="popup-exit" href="javascript:void(0)" onclick="togglePopup9()">Close</a>
+        </div>
+    </div>
     <footer>
             <section id="all-footer">
                

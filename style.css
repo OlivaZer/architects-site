@@ -33,7 +33,7 @@ nav{
     align-items: center;
     height: 50px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
 nav a{
@@ -42,20 +42,13 @@ nav a{
     list-style-type: none;
     color: black;
     font-size: 1.2em;
-    
-    
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content:center;
-    gap: 300px;
-    
-    
-    
-    
-    
+    gap: 300px; 
 }
 
 /******************************************************Main*************************************/
@@ -90,11 +83,7 @@ nav ul {
 }
 .left-main p{
     width: 500px;
-    
-   
 }
-
-
 
 .lien-a-propos{
     display: flex;
@@ -123,8 +112,6 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
 .right-main figure img{
@@ -180,13 +167,10 @@ nav ul {
     font-weight: bold;
     transition: transform 0.5s;
 }
-
-
-
 /************************ footer ***************************************/
 
 footer{
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: white;
 }
 
 #all-footer{
@@ -259,14 +243,11 @@ nav a:hover,
 .wallpaper-a-propos h2{
     font-size: 3em;
     color: white;
-
-
 }
 .section-albums{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    
-    
     align-items: center;
     justify-content: center;
     margin-top: 50px;
@@ -275,11 +256,9 @@ nav a:hover,
 .grid-albums{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px ;
     gap: 20px;
-
 }
-
 
 .grid-albums img{
   flex-wrap: wrap;              
@@ -291,7 +270,6 @@ nav a:hover,
 
 .grid-albums img:hover{
     transform:translatey(-10px) ;
-
 }
 
 /************************ a propos *********************/
@@ -306,8 +284,6 @@ nav a:hover,
     overflow: hidden; 
     border-radius: 50%;
     position: relative;
-    
-    
 }
 
 .photo-sam img,
@@ -315,7 +291,6 @@ nav a:hover,
 .photo-tom img,
 .photo-adam img,
 .photo-alex img{
-    
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -372,7 +347,6 @@ nav a:hover,
     max-width:  960px;
     /* border: solid white; */
     gap: 50px;
-
 }
 
 .wallpaper-a-propos{
@@ -388,17 +362,13 @@ nav a:hover,
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .carte-1,
 .carte-3,
 .carte-5{
     border-right: solid white;
-    
 }
-
-
 
 .reseaux-circle{
     position: absolute;
@@ -409,7 +379,6 @@ nav a:hover,
     font-size: 40px;
     gap: 10px;
     transition: 1s;
-    
 }
 
 .photo-tom:hover .reseaux-circle,
@@ -423,15 +392,21 @@ nav a:hover,
 .reseaux-circle a {
     color: white;
 }
-.reseaux-circle a:hover {
-    
-    
+.reseaux-circle a:hover {  
     color: black;
 }
 
 /******************** POPUP-OVERLAY ********************/
 
-#popup-overlay{
+#popup-overlay,
+#popup-overlay2,
+#popup-overlay3,
+#popup-overlay4,
+#popup-overlay5,
+#popup-overlay6,
+#popup-overlay7,
+#popup-overlay8,
+#popup-overlay9{
     position: fixed;
     left: 0;
     right: 0;
@@ -441,12 +416,22 @@ nav a:hover,
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
-    
+    display: none; 
 }
 
-#popup-overlay.open{
-    display: block !important;
+#popup-overlay.open,
+#popup-overlay2.open,
+#popup-overlay3.open,
+#popup-overlay4.open,
+#popup-overlay5.open,
+#popup-overlay6.open,
+#popup-overlay7.open,
+#popup-overlay8.open,
+#popup-overlay9.open{
+     display: block ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .popup-content{
@@ -460,11 +445,34 @@ nav a:hover,
     border-radius: 10px;
     color: white;
     position: relative;
-    
+    border: solid 0.5px;  
 }
+
+.top-popup{
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    gap: 5px;
+}
+
+#popup-overlay3 .top-popup{
+    padding-left: 70px;
+}
+
+#popup-overlay5 .top-popup{
+padding-left: 30px;
+}
+
+
 .popup-sounds{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.popup-sounds img{
+    width: 319px;
 }
 
 .popup-exit{
@@ -474,17 +482,140 @@ nav a:hover,
     color: white;
 }
 
+.sounds-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sounds-times{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+}
 
 
+/* *********************************Contact ********************************* */
+
+#contact{
+    background-color: black;
+    padding: 100px 15;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.corp_contact{
+    background-color: white;
+    max-width: 900px;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10px;
+    box-sizing: border-box;
+    
+    
+    border-radius: 15px;
+    /* box-shadow: 0px 10px 50px -10px #d6d6d6; */
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h6{
+    font-size: 1.3em ;
+}
+
+.title h3{
+    font-size: 3em;
+
+}
+#contact .corp_contact form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+
+}
+#contact .corp_contact form input{
+    width: 46%; 
+    
+}
+
+#contact .corp_contact form input:hover,
+#contact .corp_contact form textarea:hover
+{
+    border-bottom:  2px solid rgb(70,130,180) ;
+    
+}
+#contact .corp_contact form input,
+#contact .corp_contact form textarea{
+    margin: 16px 0  ;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+
+}
 
 
+#contact .corp_contact form textarea{
+    width: 100%;
+    resize: none;
+    height: 150px;
+    margin-bottom: 40px;
+   
+}
 
+#contact .corp_contact form button{
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.844);
+    border: solid 3px black;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 30px;
+    outline:  none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
 
+#contact .corp_contact form button:hover{
+    transform:  translateY(-5px);
+    box-shadow: rgb(214, 214, 214) 0px 10px 40px 0px;
+}
 
+.wallpaper-contact{
+    height: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(imgs/wallpaper-contact);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 
+}
+.wallpaper-contact h2{
+    font-size: 3em;
 
-
-
+}
 
 
 
