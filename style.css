@@ -470,6 +470,8 @@ padding-left: 30px;
     align-items: center;
     justify-content: space-around;
     margin-top: 50px;
+    border-top: solid rgba(255, 255, 255, 0.807); /**** à voir si je rage la border */
+    padding-top: 30px; 
 }
 .popup-sounds img{
     width: 319px;
