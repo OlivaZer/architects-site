@@ -634,7 +634,7 @@ padding-left: 30px;
 
 /********Media Query Home Mobile************/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
 
     nav{
         height: auto;
@@ -651,7 +651,7 @@ padding-left: 30px;
         width: 100%;
         text-align: center;
         top: 0;
-        left: -500px;
+        left: -600px;
         height: 100vh;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.9);
@@ -730,7 +730,7 @@ padding-left: 30px;
 /********Media Query à propos Mobile************/
 
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 600px) { 
     .carte-1,
     .carte-2,
     .carte-3,
@@ -797,7 +797,7 @@ padding-left: 30px;
 
 /********Media Query Discographie Mobile************/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     .wallpaper-soundtracks {
         height: 240px;
@@ -843,7 +843,7 @@ padding-left: 30px;
 
 /********Media Query contact Mobile************/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     .wallpaper-contact {
         height: 250px;
