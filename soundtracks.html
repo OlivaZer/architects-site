@@ -14,17 +14,19 @@
     <script src="app.js"></script>
     <header>
         <nav>
-            <ul>
+            <ul id="nav-burger">
                 <a href="index.html"><li>Home</li></a> 
                 <a href="a-propos.html"><li>About us</li></a>
                 <a href="soundtracks.html"><li>Discography </li></a>
                 <a href="contact.html"><li>Contact</li></a>
+                <a class="nav-exit" href="javascript:void(0)" onclick="togglePopupBurger()"><i class="fa-solid fa-xmark"></i></a>
             </ul>
+            <a onclick="togglePopupBurger()" class="menu-burger" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
         </nav>
     </header>
     <main>
         <section class="wallpaper-soundtracks">
-            <h2>The Classic symptoms Of a Broken Qpirit </h2>
+            <h2>The Classic symptoms Of a Broken Spirit </h2>
             
         </section>
         <section class="section-albums">
@@ -35,7 +37,6 @@
                 <a onclick="togglePopup3()" href="avascript:void(0)"><img src="imgs/albums/album7.jpg" alt="Holly Hell"></a>
                 <a onclick="togglePopup4()" href="#"><img  src="imgs/albums/album1.jpg" alt="All Our Gods Have Abandoned Us"></a>
                 <a onclick="togglePopup5()" href="#"><img src="imgs/albums/album4.jpg" alt="For Those That Wish To Exist At Abbey Road"></a>
-                
                 <a onclick="togglePopup6()" href="#"> <img src="imgs/albums/album8.jpg" alt="Lost Forever"></a>
                 <a onclick="togglePopup7()" href="#"> <img src="imgs/albums/album9.jpg" alt="The Here and Now"></a>
                 <a onclick="togglePopup8()" href="#"> <img src="imgs/albums/album10.jpg" alt="Daybraker (Delux Edition)"></a>
@@ -49,10 +50,9 @@
     <div id="popup-overlay">
         <div class="popup-content">
             <div class="top-popup">
-                 <h2>The classic symptoms of a broken spirit</h2>
-                 <p>Album-2022-11 titres</p>
+                <h2>The classic symptoms of a broken spirit</h2>
+                <p>Album-2022-11 titres</p>
             </div>
-           
             <div class="popup-sounds">
                 <div class="sounds-titles">
                     <p>#Titre</p>
@@ -257,7 +257,7 @@
                     
                 </div>
                 <div class="sounds-times">
-                    <p>Durée</p>
+                    <p class="durée-titre">Durée</p>
                     <p>1:38</p>
                     <p>3:51</p>
                     <p>3:32</p>
@@ -284,10 +284,9 @@
     <div id="popup-overlay6">
         <div class="popup-content">
             <div class="top-popup">
-                 <h2>lost Forever//Lost Together</h2>
-                 <p>Album-2014-11 titres</p>
-            </div>
-           
+                <h2>lost Forever//Lost Together</h2>
+                <p>Album-2014-11 titres</p>
+            </div> 
             <div class="popup-sounds">
                 <div class="sounds-titles">
                     <p>#Titre</p>
@@ -421,10 +420,9 @@
     <div id="popup-overlay9">
         <div class="popup-content">
             <div class="top-popup">
-                 <h2>Hollow CROWN</h2>
-                 <p>Album-2009-12 titres</p>
+                <h2>Hollow CROWN</h2>
+                <p>Album-2009-12 titres</p>
             </div>
-           
             <div class="popup-sounds">
                 <div class="sounds-titles">
                     <p>#Titre</p>
@@ -462,8 +460,7 @@
         </div>
     </div>
     <footer>
-            <section id="all-footer">
-               
+            <section id="all-footer">               
                 <div>
                     <h2>
                         For Those That Wish to Exist

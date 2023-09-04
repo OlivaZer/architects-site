@@ -42,3 +42,9 @@ function togglePopup9(){
     let popup = document.querySelector("#popup-overlay9");
     popup.classList.toggle("open");
 }
+// Menu burger --------------------------------------------------
+
+function togglePopupBurger(){
+    let popup = document.querySelector("#nav-burger");
+    popup.classList.toggle("open");
+}

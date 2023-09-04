@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="app.js"></script>
     <header>
         <div id="banner-index">
             <figure>
@@ -18,12 +19,15 @@
             </figure>
         </div>
         <nav>
-            <ul>
+            <ul id="nav-burger" >
                 <a href="index.html"><li>Home</li></a> 
                 <a href="a-propos.html"><li>About us</li></a>
                 <a href="soundtracks.html"><li>Discography </li></a>
-            <a href="contact.html"><li>Contact</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a class="nav-exit" href="javascript:void(0)" onclick="togglePopupBurger()"><i class="fa-solid fa-xmark"></i></a>
             </ul>
+            <a onclick="togglePopupBurger()" class="menu-burger" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+            
         </nav>
         <main>
             <section id="all-main">
@@ -47,8 +51,7 @@
             </section>
         </main>
         <footer>
-            <section id="all-footer">
-               
+            <section id="all-footer">  
                 <div>
                     <h2>
                         For Those That Wish to Exist

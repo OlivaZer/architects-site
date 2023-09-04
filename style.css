@@ -7,8 +7,6 @@
 body{
     background-color: black;
     font-family: 'Manrope', sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
 }
 /*****************************************header + nav *********************/
 
@@ -49,6 +47,17 @@ nav ul {
     flex-direction: row;
     justify-content:center;
     gap: 300px; 
+}
+.menu-burger{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: black;
+    display: none;
+}
+.nav-exit {
+    display: none;
 }
 
 /******************************************************Main*************************************/
@@ -99,9 +108,9 @@ nav ul {
 
 
 .lien-a-propos {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     font-size: 2em;
     text-decoration: none;
@@ -115,7 +124,7 @@ nav ul {
 }
 
 .right-main figure img{
-    width: 500px;
+    max-width: 500px;
 
 }
 .right-main figure {
@@ -261,7 +270,7 @@ nav a:hover,
 }
 
 .grid-albums img{
-  flex-wrap: wrap;              
+flex-wrap: wrap;              
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -322,8 +331,8 @@ nav a:hover,
 .tom-text h2,
 .adam-text h2,
 .alex-text h2{
-   font-size: 2em;
-   margin-bottom: 10px;
+font-size: 2em;
+margin-bottom: 10px;
 }
 /***************cartes**********/
 
@@ -470,7 +479,7 @@ padding-left: 30px;
     align-items: center;
     justify-content: space-around;
     margin-top: 50px;
-    border-top: solid rgba(255, 255, 255, 0.807); /**** à voir si je rage la border */
+    border-top: solid rgba(255, 255, 255, 0.807); 
     padding-top: 30px; 
 }
 .popup-sounds img{
@@ -518,10 +527,8 @@ padding-left: 30px;
     align-items: center;
     padding: 60px 10px;
     box-sizing: border-box;
-    
-    
     border-radius: 15px;
-    /* box-shadow: 0px 10px 50px -10px #d6d6d6; */
+    
 }
 
 .title{
@@ -572,8 +579,7 @@ padding-left: 30px;
     width: 100%;
     resize: none;
     height: 150px;
-    margin-bottom: 40px;
-   
+    margin-bottom: 40px;   
 }
 
 #contact .corp_contact form button{
@@ -618,7 +624,247 @@ padding-left: 30px;
     font-size: 3em;
 
 }
+/* Media Query Nav 1260px */
+@media screen and (max-width: 1260px){
+    nav ul{
+        gap: 150px;
+    }
+}
 
 
+/********Media Query Home Mobile************/
+
+@media screen and (max-width: 400px){
+
+    nav{
+        height: auto;
+        
+        
+    }
+    #nav-burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        gap: 30px;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: -500px;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        
+        
+    }
+    #nav-burger.open{
+        display: block;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+
+    
+
+    .menu-burger{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        display: block;
+    }
+
+    nav a{
+        color: white;
+    }
+
+    .nav-exit {
+        color: red;
+        border: solid;
+        border-radius: 100%;
+        width: 8%;
+    }
+
+    #banner-index img {
+        height: 20%;
+    }
+
+    #all-main {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    #all-main h1 {
+        font-size: 2em; 
+    }
+    .left-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-main p {
+        width: 100%;
+    }
+
+    .right-main figure img {
+        max-width: 319px;
+    }
+
+    .wallpaper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+}
 
 
+/********Media Query à propos Mobile************/
+
+
+@media screen and (max-width: 400px) { 
+    .carte-1,
+    .carte-2,
+    .carte-3,
+    .carte-4,
+    .carte-5 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        border-right: none;
+        border-bottom: solid grey;
+    }
+
+    .photo-sam,
+    .photo-dan,
+    .photo-tom,
+    .photo-adam,
+    .photo-alex{
+
+        width: 175px;
+        height: 175px;
+
+    }
+    
+    .reseaux-circle {
+        top: 40px;
+        font-size: 20px;  
+    }
+
+    .sam-text, .dan-text, .tom-text, .adam-text, .alex-text {
+        text-align: center;
+        width: 80%;
+        
+    }
+    .wallpaper-soundtracks h2, .wallpaper-a-propos h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .wallpaper-a-propos {
+        height: 236px;
+        width: 100%;
+        
+    }
+
+    #all-footer h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .logos-footer {
+        word-spacing: 15px;
+    }
+
+    #all-carte{
+        margin-bottom: 50px;
+    }
+
+    .sam-text, .dan-text, .tom-text, .adam-text, .alex-text {
+        
+        padding-bottom: 50px;
+    }
+    
+}
+
+/********Media Query Discographie Mobile************/
+
+@media screen and (max-width: 400px) {
+
+    .wallpaper-soundtracks {
+        height: 240px;
+        background: rgba(0, 0, 0, 0.7) url(imgs/Soundtracks.jpg);
+        background-attachment: fixed;
+        /* background-position: center; */
+        /* background-size: cover; */
+        
+    }
+
+    .grid-albums {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 154px;
+        gap: 30px;
+        /* border-bottom: solid 1px white; */
+    }
+
+    .top-popup{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .popup-sounds img{
+        display: none;
+    }
+
+    #popup-overlay5 .popup-sounds{
+        align-items: flex-start;
+        
+    
+    }
+
+    #popup-overlay5 .sounds-times{
+        gap: 11px;
+
+    
+    }
+
+}
+
+
+/********Media Query contact Mobile************/
+
+@media screen and (max-width: 400px) {
+
+    .wallpaper-contact {
+        height: 250px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7) url(imgs/wallpaper-contact);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 200px; /* Ajoutez cette ligne */
+        background-blend-mode: darken;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .wallpaper-contact h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+        
+    
+
+}
