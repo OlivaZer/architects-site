@@ -624,14 +624,38 @@ padding-left: 30px;
     font-size: 3em;
 
 }
-/* Media Query Nav 1260px */
+/* Media Query Nav 1260px + Tablette */
 @media screen and (max-width: 1260px){
     nav ul{
         gap: 150px;
     }
 }
 
+@media screen and (max-width: 900px){
+    nav ul{
+        gap: 100px;
+    }
+}
 
+
+
+/* ---------------------------Page Home-------------------- */
+            /********Media Query Home Tablette************/
+@media screen and (max-width: 900px){
+    #all-main {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .left-main {
+        width: 100%;
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    
+}
 /********Media Query Home Mobile************/
 
 @media screen and (max-width: 600px){
@@ -726,7 +750,35 @@ padding-left: 30px;
 
 }
 
+/*************** Page à-propros Tablette ************************/
+/********Media Query à propos Mobile************/
 
+@media screen and (max-width: 900px){
+    
+    .carte-2,
+    .carte-4{
+        flex-direction: row-reverse;
+    }
+
+    .carte-1,
+    .carte-2,
+    .carte-3,
+    .carte-4,
+    .carte-5 {
+        margin-top: 100px;
+        
+    }
+
+    .wallpaper-a-propos {
+        height: 300px;
+        background: rgba(0, 0, 0, 0.7) url(imgs/images_a-propos/bands.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        
+    }
+
+
+}
 /********Media Query à propos Mobile************/
 
 
@@ -770,8 +822,9 @@ padding-left: 30px;
     }
 
     .wallpaper-a-propos {
-        height: 236px;
-        width: 100%;
+        height: 156px;
+        background-position: top;
+        background-size: contain;
         
     }
 
@@ -795,6 +848,33 @@ padding-left: 30px;
     
 }
 
+/*************** Page Discographie Tablette ************************/
+@media screen and (max-width: 900px){
+    .grid-albums {
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 250px;
+        gap: 30px;
+        /* border-bottom: solid 1px white; */
+    }
+
+    .wallpaper-soundtracks h2{
+        text-align: center;
+
+    }
+
+    .wallpaper-soundtracks {
+        height: 300px;
+        background: rgba(0, 0, 0, 0.7) url(imgs/Soundtracks.jpg);
+        background-attachment: fixed;
+        /* background-position: center; */
+        /* background-size: cover; */
+        
+    }
+
+    #popup-overlay5 img{
+        width: 250px;
+    }
+}
 /********Media Query Discographie Mobile************/
 
 @media screen and (max-width: 600px) {
@@ -840,32 +920,28 @@ padding-left: 30px;
 
 }
 
-
+/*************** Page contact Tablette ************************/
+@media screen and (max-width: 900px){
+    .wallpaper-contact {
+        height: 241px;
+        background-position: top;
+        background-size: contain;
+    }
+}
 /********Media Query contact Mobile************/
 
 @media screen and (max-width: 600px) {
 
     .wallpaper-contact {
-        height: 250px;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.7) url(imgs/wallpaper-contact);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100% 200px; /* Ajoutez cette ligne */
-        background-blend-mode: darken;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: white;
-    }
+            height: 156px;
+            background-position: top;
+            background-size: contain;
+        }
+    
 
     .wallpaper-contact h2 {
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
     }
-        
-    
 
 }
