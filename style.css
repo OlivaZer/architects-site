@@ -682,6 +682,7 @@ padding-left: 30px;
     }
 
     .nav-exit {
+        display: block;
         color: red;
         border: solid;
         border-radius: 100%;
