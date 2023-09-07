@@ -201,8 +201,15 @@ footer{
 .footer-logo img{
     width: 80px;
     margin-bottom: 30px;
+    transition: 0.7s;
     
 }
+
+.footer-logo img:hover{
+    transform: translateY(-2px);
+    
+}
+
 .logos-footer{
     word-spacing: 30px;
 }
@@ -618,12 +625,59 @@ padding-left: 30px;
     align-items: center;
     justify-content: center;
     color: white;
+    
 
 }
 .wallpaper-contact h2{
     font-size: 3em;
-
 }
+    /***************************** WELCOME PAGE************************************ */
+
+    #welcome-section {
+        width: 100%;
+        position: relative;
+    }
+    
+    /* Styles pour le bouton "WELCOME" */
+.button-welcome {
+    width: 200px;
+    height: 50px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 70%; /* Position verticale au milieu de l'écran */
+    left: 50%; /* Position horizontale au milieu de l'écran */
+    transform: translate(-50%, -50%); /* Pour centrer horizontalement et verticalement */
+    border: solid black 0.5px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: rgb(218, 214, 214);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: transform 1s;
+    
+    
+    
+}
+
+.button-welcome:hover{
+    transform: translate(-50%, -70%); /* Légère translation vers le haut lors du survol */
+}
+    
+#background-video {
+    position: fixed; /* Position fixe pour qu'elle reste à l'arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largeur de la vidéo sur toute la largeur de l'écran */
+    height: 100%; /* Hauteur de la vidéo sur toute la hauteur de l'écran */
+    object-fit: cover; /* Remplir l'écran en conservant le ratio d'aspect */
+    
+}
+
+
+
+
 /* Media Query Nav 1260px + Tablette */
 @media screen and (max-width: 1260px){
     nav ul{
@@ -688,6 +742,8 @@ padding-left: 30px;
         display: flex;
         justify-content: flex-start;
         padding-top: 10px;
+        
+        
     }
 
     
