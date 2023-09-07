@@ -656,9 +656,7 @@ padding-left: 30px;
     color: rgb(218, 214, 214);
     background-color: rgba(0, 0, 0, 0.4);
     transition: transform 1s;
-    
-    
-    
+    font-weight: bold; 
 }
 
 .button-welcome:hover{
@@ -673,7 +671,7 @@ padding-left: 30px;
     height: 100%; /* Hauteur de la vidéo sur toute la hauteur de l'écran */
     object-fit: cover; /* Remplir l'écran en conservant le ratio d'aspect */
     
-}
+} 
 
 
 
